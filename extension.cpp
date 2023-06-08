@@ -93,7 +93,7 @@ void CGameModesRestrictionsExt::ApplyGameSettings(KeyValues *pRequest)
 		if (bOverrideMode)
 		{
 			// Allow the same campaign for player convenience
-			KeyValues *pSettings = new KeyValues(nullptr);
+			KeyValues *pSettings = new KeyValues("");
 			KeyValues::AutoDelete autodelete(pSettings);
 			pSettings->SetString("Game/mode", pszGameMode);
 			pSettings->SetString("Game/campaign", pRequest->GetString("Game/campaign"));
